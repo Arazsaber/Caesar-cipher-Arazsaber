@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar cipher</title>
+</head>
+<body>
+    <div class="main">
+        <div class="div_left">
+            <div class="div_top">
+                <div>
+                    <label for="language">Message language</label>
+                    <select id="language" class="language head1" name="language">
+                        <option value="en">English</option>
+                        <option value="fa">Persian</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="conversion_type">Conversion type</label>
+                    <select id="conversion_type" class="conversion_type head1" onchange="change_type()" name="type">
+                        <option value="encryption">Message encryption</option>
+                        <option value="decrypt">Message decrypt</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="Transfer">Transfer amount</label>
+                    <input class="head1" id="Transfer" type="number" placeholder="Enter the number">
+                </div>
+
+            </div>
+            <div class="div_bottom">
+
+                    <button id="convert_btn"  onclick="convert()" >conversion</button>
+
+            </div>
+
+        </div>
+
+        <div class="div_right">
+            <div class="message_div">
+                <textarea  id='message' placeholder="Enter your message to encrypt"></textarea>
+            </div>
+            
+            <div class="output">
+                <p id="out_put">output</p>  
+            </div>
+        </div>
+
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
